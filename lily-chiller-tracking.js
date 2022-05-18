@@ -9,7 +9,7 @@ var sourceparam = getUrlParameter('source_id');
 var source = Cookies.get('source_id');
 if (source == null || source == ""){
 	if (sourceparam != "") {
-		Cookies.set('source_id', sourceparam, { expires: 365 });}}
+		Cookies.set('source_id', sourceparam, { expires: 365 });}
 	else{
 		Cookies.set('source_id', 'wo', { expires: 365 });}} //If no source URL Parameter present, then assume source was 'wo' or 'website organic'
 
@@ -30,3 +30,4 @@ var fbclid = Cookies.get('fbclid');
 if (fbclid == null || fbclid == ""){
 	if (fbclidparam != "") {
 		Cookies.set('campaign_id', fbclidparam, { expires: 365 });}}
+ 
